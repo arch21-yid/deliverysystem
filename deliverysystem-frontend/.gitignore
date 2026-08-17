@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Frontend builds
+.next/
+**/out/
+
+# Spring Boot Maven builds
+target/
+*.class
+
+# Logs & System files
+*.log
+.DS_Store
+Thumbs.db
