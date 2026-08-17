@@ -1,4 +1,43 @@
-🛒 Supermarket E-Commerce, POS & Delivery Management System (v3.5 Pro)An enterprise-ready, full-stack application engineered to unify physical point-of-sale (POS) cashier operations, online retail storefronts, real-time inventory synchronization, and multi-stage delivery logistics.✨ Key Features & Capabilities🌐 Multi-Language Support (i18n): Real-time language switching between English and አማርኛ (Amharic) across all UI elements, tabs, forms, and receipt outputs.🎨 Theme Switcher Engine: Built-in theme toggling supporting Dark Mode, Light Mode, and High-Contrast Mode for various lighting environments.📏 Multi-Unit Measurement System: Inventory cataloging supports custom measurement units (pcs, kg, g, L, pack, box), properly tracked in stock deduction, unit pricing, and customer receipts.⚡ Hardware Barcode Scanner Listener: Global event listener detecting physical USB/Bluetooth scanner inputs directly to query items, trigger instant cart additions, and raise toast alerts.🛒 POS Terminal & Checkout: Interactive cart management, real-time inventory threshold validations, subtotal/tax auto-calculation, and instant print receipt modal generation.📦 Inventory Catalog Management: Full CRUD operations for stock, barcode assignments, custom pricing, category breakdown, and low-stock indicator thresholds.🚚 Fulfillment Order Tracking: Real-time lifecycle state updates (PENDING ➔ PREPARING ➔ DISPATCHED ➔ DELIVERED).📊 Analytics Dashboard: Category-wise unit distribution progress visualization, average order value tracking, and real-time revenue metrics.🎯 Target Audience & System PurposeWho Uses This Application?Store Cashiers / POS Clerks: To handle walk-in customer checkouts, apply sales tax automatically, and trigger immediate stock deductions.Warehouse & Inventory Managers: To track stock counts, receive low-inventory warnings, manage SKUs/barcodes, and update catalog pricing.Fulfillment & Delivery Teams: To monitor incoming orders and update delivery pipelines (PENDING ➔ PREPARING ➔ DISPATCHED ➔ DELIVERED).Store Operations: To maintain live visibility over daily store sales volume, active dispatch counts, and stock availability.Primary PurposeOmnichannel Store Management: Solves inventory fragmentation by serving as a single source of truth for both online delivery requests and in-person store sales.Atomic Inventory Tracking: Deducts stock atomically on checkout to prevent overselling across fulfillment channels.Logistics Pipeline Visibility: Ensures real-time order status tracking from cart submission to physical doorstep delivery.📐 System ArchitectureThe application uses a decoupled Client-Server Architecture:┌─────────────────────────────────────────────────────────┐
+# 🛒 Supermarket E-Commerce, POS & Delivery Management System (v3.5 Pro)
+
+An enterprise-ready, full-stack application engineered to unify physical point-of-sale (POS) cashier operations, online retail storefronts, real-time inventory synchronization, and multi-stage delivery logistics.
+
+---
+
+## ✨ Key Features & Capabilities
+
+* **🌐 Multi-Language Support (i18n):** Real-time language switching between English and አማርኛ (Amharic) across all UI elements, tabs, forms, and receipt outputs.
+* **🎨 Theme Switcher Engine:** Built-in theme toggling supporting Dark Mode, Light Mode, and High-Contrast Mode for various lighting environments.
+* **📏 Multi-Unit Measurement System:** Inventory cataloging supports custom measurement units (`pcs`, `kg`, `g`, `L`, `pack`, `box`), properly tracked in stock deduction, unit pricing, and customer receipts.
+* **⚡ Hardware Barcode Scanner Listener:** Global event listener detecting physical USB/Bluetooth scanner inputs directly to query items, trigger instant cart additions, and raise toast alerts.
+* **🛒 POS Terminal & Checkout:** Interactive cart management, real-time inventory threshold validations, subtotal/tax auto-calculation, and instant print receipt modal generation.
+* **📦 Inventory Catalog Management:** Full CRUD operations for stock, barcode assignments, custom pricing, category breakdown, and low-stock indicator thresholds.
+* **🚚 Fulfillment Order Tracking:** Real-time lifecycle state updates (`PENDING` ➔ `PREPARING` ➔ `DISPATCHED` ➔ `DELIVERED`).
+* **📊 Analytics Dashboard:** Category-wise unit distribution progress visualization, average order value tracking, and real-time revenue metrics.
+
+---
+
+## 🎯 Target Audience & System Purpose
+
+### Who Uses This Application?
+* **Store Cashiers / POS Clerks:** To handle walk-in customer checkouts, apply sales tax automatically, and trigger immediate stock deductions.
+* **Warehouse & Inventory Managers:** To track stock counts, receive low-inventory warnings, manage SKUs/barcodes, and update catalog pricing.
+* **Fulfillment & Delivery Teams:** To monitor incoming orders and update delivery pipelines (`PENDING` ➔ `PREPARING` ➔ `DISPATCHED` ➔ `DELIVERED`).
+* **Store Operations:** To maintain live visibility over daily store sales volume, active dispatch counts, and stock availability.
+
+### Primary Purpose
+* **Omnichannel Store Management:** Solves inventory fragmentation by serving as a single source of truth for both online delivery requests and in-person store sales.
+* **Atomic Inventory Tracking:** Deducts stock atomically on checkout to prevent overselling across fulfillment channels.
+* **Logistics Pipeline Visibility:** Ensures real-time order status tracking from cart submission to physical doorstep delivery.
+
+---
+
+## 📐 System Architecture
+
+The application uses a decoupled Client-Server Architecture:
+
+```text
+┌─────────────────────────────────────────────────────────┐
 │              Next.js / React (Frontend)                 │
 │   - Interactive POS Cart & Live Analytics               │
 │   - Inventory Management & Order Lifecycle Tracking     │
@@ -41,7 +80,7 @@ spring.datasource.username=postgres
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 Start the Spring Boot backend:Bash./mvnw spring-boot:run
-Backend server will start at http://localhost:80813️⃣ Frontend Setup (Next.js)Navigate to the frontend directory and install dependencies:Bashcd deliverySystem-frontend
+Backend server will start at http://localhost:80813️⃣ Frontend Setup (Next.js)Navigate to the frontend directory and install dependencies:Bashcd deliverysystem-frontend
 npm install
 Launch the development server:Bashnpm run dev
 Open http://localhost:3000 in your browser to view the application.📄 LicenseThis project is open-source and distributed under the MIT License. See LICENSE for details.
